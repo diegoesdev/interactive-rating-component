@@ -4,6 +4,7 @@
     --white: hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
+    --light-dark-blue: hsl(215, 16%, 21%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
 
@@ -35,16 +36,28 @@ body {
     align-items: center;
 }
 
-.rating-card {
-    background-color: var(--dark-blue);
+.rating-card {  
+    /* background-color: var(--dark-blue); */
+    background: rgb(24,30,36);
+    background: linear-gradient(360deg, rgba(24,30,36,1) 0%, rgba(37,45,55,1) 72%);
     min-width: 250px;
     max-width: 375px;
     height: 400px;
-    padding: 30px 20px;
+    padding: 35px 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .rating-card__icon {
-    background-color: var(--medium-grey);
+    background-color: var(--light-dark-blue);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rating-card__title {
@@ -54,7 +67,34 @@ body {
 }
 
 .rating-card__text {
-    color: var(--white);
+    color: var(--medium-grey);
     font-size: var(--paragraph);
     line-height: 2rem;
+}
+
+.rating-card__rate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-card__rate button {
+    width: 45px;
+    height: 45px;
+    background-color: var(--light-dark-blue);
+    border-style: none;
+    border-radius: 50%;
+    color: var(--medium-grey);
+}
+
+.rating-card__button-submit {
+    height: 50px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: var(--orange);
+}
+
+.rating-card__button-submit a {
+    text-decoration: none;
+    color: var(--white);
+    letter-spacing: .4rem;
 }
