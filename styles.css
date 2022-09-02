@@ -77,7 +77,7 @@ body {
     justify-content: space-between;
 }
 
-.rating-card__rate button {
+.rating-card__rate--active {
     width: 45px;
     height: 45px;
     background-color: var(--light-dark-blue);
@@ -86,15 +86,29 @@ body {
     color: var(--medium-grey);
 }
 
-.rating-card__button-submit {
-    height: 50px;
+.rating-card__rate--active:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+}
+.rating-card__rate--active:active {
+    background-color: var(--medium-grey);
+    color: var(--white);
+}
+
+.rating-card__submit {
+    height: 45px;
     border-style: none;
     border-radius: 50px;
     background-color: var(--orange);
-}
-
-.rating-card__button-submit a {
-    text-decoration: none;
     color: var(--white);
     letter-spacing: .4rem;
+}
+
+.rating-card__submit:hover {
+    cursor: pointer;
+}
+.rating-card__submit:active {
+    background-color: var(--white);
+    color: var(--orange);
 }
