@@ -37,7 +37,6 @@ body {
 }
 
 .card {  
-    /* background-color: var(--dark-blue); */
     background: rgb(24,30,36);
     background: linear-gradient(360deg, rgba(24,30,36,1) 0%, rgba(37,45,55,1) 72%);
     min-width: 250px;
@@ -111,4 +110,45 @@ body {
 .card__submit:active {
     background-color: var(--white);
     color: var(--orange);
+}
+
+/* THANK YOU CARD */
+
+.thank-you {
+    background: rgb(24,30,36);
+    background: linear-gradient(360deg, rgba(24,30,36,1) 0%, rgba(37,45,55,1) 72%);
+    min-width: 250px;
+    max-width: 375px;
+    height: 400px;
+    padding: 35px 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thank-you__selected {
+    color: var(--orange);
+    background-color: var(--light-dark-blue);
+    font-size: var(--paragraph);
+    height: 35px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.thank-you__title {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: var(--bold);
+}
+
+.thank-you__text {
+    color: var(--medium-grey);
+    font-size: var(--paragraph);
+    line-height: 2rem;
+    text-align: center;
 }
