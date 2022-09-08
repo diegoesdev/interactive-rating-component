@@ -1,16 +1,10 @@
 // Redirecting Button to another page
-function onClickThanks() {
-    document.location.href="./thank-you.html";
-}
+// In HTML add onclick="onClickThanks()" to the button
+// function onClickThanks() {
+//     document.location.href="./thank-you.html";
+// }
 
 // Changing the color of the number buttons
-
-// function changeColor() {
-//     //document.querySelector(".card__rate--active").style.color = 'red';
-//     let activeColor = document.querySelector('.card__rate--active');
-    
-//     activeColor.addEventListener('click', () => activeColor.style.backgroundColor = 'hsl(216, 12%, 54%)');
-// }
 
 let buttons = document.querySelectorAll('button');
 
@@ -20,3 +14,6 @@ buttons.forEach(button => {
         this.classList.add('active');
     })
 })
+
+// Interactive number in the thank you section
+
