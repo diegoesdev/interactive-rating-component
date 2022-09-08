@@ -1,12 +1,12 @@
 // Redirecting Button to another page
-// In HTML add onclick="onClickThanks()" to the button
-// function onClickThanks() {
-//     document.location.href="./thank-you.html";
-// }
+
+function onClickThanks() {
+    document.location.href="./thank-you.html";
+}
 
 // Changing the color of the number buttons
 
-let buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('button');
 
 buttons.forEach(button => {
     button.addEventListener('click', function () {
