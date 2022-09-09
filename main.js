@@ -1,12 +1,20 @@
-// Redirecting Button to another page
-
-function onClickThanks() {
-    document.location.href="./thank-you.html";
-}
-
-// Changing the color of the number buttons
-
+const cardContainer = document.querySelector(".card");
+const thanksContainer = document.querySelector(".thank-you");
+const buttonSubmit = document.getElementById("submit");
+const rating = document.getElementById("rating");
+const buttonRates = document.querySelectorAll(".card__rate--active")
 const buttons = document.querySelectorAll('button');
+
+buttonSubmit.addEventListener("click", () => {
+    thanksContainer.classList.remove("hidden");
+    cardContainer.style.display = "none";
+});
+
+buttonRates.forEach((rate) => {
+    rate.addEventListener("click", () => {
+        rating.innerHTML = rate.innerHTML;
+    });
+});
 
 buttons.forEach(button => {
     button.addEventListener('click', function () {
@@ -14,6 +22,3 @@ buttons.forEach(button => {
         this.classList.add('active');
     })
 })
-
-// Interactive number in the thank you section
-

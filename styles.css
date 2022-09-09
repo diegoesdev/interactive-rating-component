@@ -157,6 +157,10 @@ body {
     text-align: center;
 }
 
+.hidden {
+    display: none;
+}
+
 @media screen and (max-width: 345px) {
     .card__rate--active {
         height: 35px;
